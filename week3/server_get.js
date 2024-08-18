@@ -19,7 +19,7 @@
         res.send(Buffer.from(n1));     
     })
     console.log (addTwoNumber(19,12));
-    const port=3040;
+    const port=3050;
     app.listen(port,()=> {
         console.log("hello i'm listening to port "+port);
     })

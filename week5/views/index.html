@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Recipes</title>
+</head>
+<style>
+    .resize-image {
+        width: 90%;
+
+        height: auto;
+
+    }
+
+    .center-align {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center-align"><b>Healthy life = Wealthy life</a></b>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+            </ul>
+        </div>
+    </nav>
+    <main class="main-body">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h1 id="heading">Welcome to Healthy Recipies from</h1>
+                    <p>
+                        At Healthy Lifestyle, we are dedicated to helping you live your best life. Our mission is to
+                        provide you with the tools and resources you need to achieve a balanced and fulfilling
+                        lifestyle. Explore our services below to start your journey towards better health and wellness.
+                        This application will give you Healthy Reciepies, Simple Excercises and motivational contents to
+                        improve your mental health.
+                    </p>
+                    <p class="flow-text">Our Healthy Recipes service offers a diverse collection of nutritious and
+                        delicious meal ideas to keep you healthy.
+                    </p>
+
+                </div>
+
+                <div class="col s4 center-align">
+                    <img class="materialboxed materialboxed-image center-align " src="images/food2.webp">
+                </div>
+
+            </div>
+            <h1>Healthy Recipes</h1>
+            <form action="/submit-form" method="POST">
+                <label for="name">Recipe Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" required></textarea>
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions" required></textarea>
+                <button type="submit">Submit Recipe</button>
+            </form>
+            <br><br>
+
+            <button onclick="window.location.href='/'">Back to Importance of Health</button>
+        </div>
+    </main>
+</body>
+
+</html>
